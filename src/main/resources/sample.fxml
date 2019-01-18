@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane fx:id="Panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" style="-fx-background-color: #FFFF00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <Label ellipsisString="" layoutX="51.0" layoutY="116.0" text="Температура Воздуха(°C):">
+         <font>
+            <Font name="Arial Narrow" size="13.0" />
+         </font></Label>
+      <Label layoutX="51.0" layoutY="146.0" text="Влажность (%):">
+         <font>
+            <Font name="Arial Narrow" size="13.0" />
+         </font></Label>
+      <Label layoutX="51.0" layoutY="176.0" text="Давление (мм. рт. ст.):">
+         <font>
+            <Font name="Arial Narrow" size="13.0" />
+         </font></Label>
+      <Label layoutX="51.0" layoutY="206.0" text="Скорость и направление ветра:">
+         <font>
+            <Font name="Arial Narrow" size="13.0" />
+         </font></Label>
+      <Label fx:id="Temperature" layoutX="251.0" layoutY="116.0" />
+      <Label fx:id="Humidity" layoutX="251.0" layoutY="146.0" />
+      <Label fx:id="Pressure" layoutX="251.0" layoutY="176.0" />
+      <Label fx:id="Wind" layoutX="251.0" layoutY="206.0" />
+      <Label fx:id="usbflash" layoutX="160.0" layoutY="246.0" text="USB не найден... сохранить информацию в другом файле?" visible="false" />
+      <Button fx:id="SaveButton" layoutX="275.0" layoutY="286.0" mnemonicParsing="false" onAction="#PathToSaveFile" opacity="0.79" text="сохранить" visible="false" />
+      <AnchorPane prefHeight="104.0" prefWidth="600.0" style="-fx-background-color: #FFD700;">
+         <children>
+            <Label fx:id="Temper" alignment="CENTER" layoutX="14.0" layoutY="73.0" prefHeight="21.0" prefWidth="568.0">
+               <font>
+                  <Font name="Arial Narrow" size="18.0" />
+               </font>
+               <effect>
+                  <Bloom />
+               </effect></Label>
+            <Label fx:id="Wind1" alignment="CENTER" layoutX="194.0" layoutY="19.0" text="Погода в Киеве" textFill="#403737">
+               <font>
+                  <Font name="Arial Italic" size="29.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="69.0" fitWidth="77.0" layoutX="486.0" layoutY="18.0">
+               <image>
+                  <Image url="earth_97176.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="69.0" fitWidth="62.0" layoutX="28.0" layoutY="18.0">
+               <image>
+                  <Image url="yoga265_41356.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      </children>
+</AnchorPane>
